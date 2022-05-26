@@ -8,6 +8,7 @@ export interface Person {
 export class Name implements PipeTransform {
 
   transform(value: Person, arg?: boolean) {
+    debugger
 
     return arg ? `${value.lastName} ${value.firstName}` : `${value.firstName} ${value.lastName}`
   }
